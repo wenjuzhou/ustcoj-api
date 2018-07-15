@@ -17,7 +17,18 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 
+from rest_framework.routers import DefaultRouter
+
+from news.views import NewsViewSet
+from user.views import UserViewSet
+
+router = DefaultRouter()
+router.register(r'news', NewsViewSet)
+router.register(r'user', UserViewSet)
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^api-auth/', include('rest_framework.urls'))
+    url(r'^api-auth/', include('rest_framework.urls')),
+    url(r'^api/', include(router.urls))
 ]
