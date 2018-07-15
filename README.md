@@ -16,7 +16,7 @@
 
 - 基于 `develop` 分支出 `feature/<name>``；
 - 完成 `feature/<name>` 的开发；
-- 将 `feature/<name>`` 压缩为一个提交后合并回 `develop` 分支；
+- 将 `feature/<name>` 压缩为一个提交后合并回 `develop` 分支；
 
 开发完多个特性后，上线：
 
