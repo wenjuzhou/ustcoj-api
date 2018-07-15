@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 NAME=ustcoj_api
 DOCKER=ustcoj_api
 APP=$(cd `dirname $0`; pwd)/app
