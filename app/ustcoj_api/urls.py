@@ -21,11 +21,13 @@ from rest_framework.routers import DefaultRouter
 
 from news.views import NewsViewSet
 from user.views import UserViewSet
+from group.views import GroupViewSet,GroupMemberViewSet
 
 router = DefaultRouter()
 router.register(r'news', NewsViewSet)
 router.register(r'user', UserViewSet)
-
+router.register(r'group', GroupViewSet)
+router.register(r'groupmember', GroupMemberViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
